@@ -3,20 +3,20 @@ var myApp = angular.module('shoppingListApp', ['ngRoute']);
 myApp.config(function ($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: "/views/home.html",
+            templateUrl: "/shoppingListApp/views/home.html",
         })
         .when('/register', {
-            templateUrl: "/views/register.html",
+            templateUrl: "/shoppingListApp/views/register.html",
             controller: 'registerController'
         })
         .when('/login', {
-            templateUrl: "/views/login.html",
+            templateUrl: "/shoppingListApp/views/login.html",
             controller: 'loginController'
         })
         .when('/shoppinglist', {
-            templateUrl: "/views/shoppinglist.html",
+            templateUrl: "/shoppingListApp/views/shoppinglist.html",
         })
         .when('/about', {
-            templateUrl: "/views/about.html",
+            templateUrl: "/shoppingListApp/views/about.html",
         });
 });
