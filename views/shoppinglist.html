@@ -1,0 +1,28 @@
+<div class="container ">
+    <div class="d-flex justify-content-center my-2">
+        <strong>Hi {{user.name}},</strong> here's your shopping List :
+    </div>
+    <div class="d-flex justify-content-center">
+        <ul class="w-75">
+            <li ng-repeat="x in user.shoppinglist" class="list-group-item list-group-item-info">{{x}}<a
+                    class=" btn btn-sm text-danger float-right fa fa-trash" ng-click="removeItem($index)"></a>
+            </li>
+        </ul>
+    </div>
+    <div class="d-flex justify-content-center">
+        <p ng-if="user.shoppinglist.length===0" class="text-danger mt-2">No items yet! Go ahead and add a new item.</p>
+    </div>
+    <div class="d-flex justify-content-center">
+        <form class="form-inline" ng-submit="addItem(item)">
+            <div class="form-group">
+                <input class="form-control mr-2" ng-model="item"  required/>
+                <button class="btn btn-success" type="submit">Add</button>
+            </div>
+        </form>
+
+    </div>
+    <div class="d-flex justify-content-center">
+        <p class="text-danger mt-2">{{errortext}}</p>
+    </div>
+
+</div>

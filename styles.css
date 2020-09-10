@@ -1,0 +1,20 @@
+:root {
+    --ficoColor: rgb(0, 90, 150);
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--ficoColor);
+}
+
+.ff {
+    color: var(--ficoColor);
+}
+
+.fbg {
+    background: var(--ficoColor);
+}
+.form-control::placeholder {
+    color: var(--ficoColor);
+    opacity: 1;
+}
