@@ -3,20 +3,20 @@ var myApp = angular.module('shoppingListApp', ['ngRoute']);
 myApp.config(function ($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: "http://" + window.location.host + "/angularjs_SPA/views/home.html",
+            templateUrl: "/views/home.html",
         })
         .when('/register', {
-            templateUrl: "http://" + window.location.host + "/angularjs_SPA/views/register.html",
+            templateUrl: "/views/register.html",
             controller: 'registerController'
         })
         .when('/login', {
-            templateUrl: "http://" + window.location.host + "/angularjs_SPA/views/login.html",
+            templateUrl: "/views/login.html",
             controller: 'loginController'
         })
         .when('/shoppinglist', {
-            templateUrl: "http://" + window.location.host + "/angularjs_SPA/views/shoppinglist.html",
+            templateUrl: "/views/shoppinglist.html",
         })
         .when('/about', {
-            templateUrl: "http://" + window.location.host + "/angularjs_SPA/views/about.html",
+            templateUrl: "/views/about.html",
         });
 });
